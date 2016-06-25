@@ -18,9 +18,10 @@ reset_color=$FX[reset]
 # RPS1='%{$fg[blue]%}%~%{$reset_color%} '
 # RPS1='%{$fg[white]%}%2~$(git_prompt_info) %{$fg_bold[blue]%}%m%{$reset_color%}'
 PROMPT='%{$nice_blue%}$prompt_hostname:%{$fg[green]%}%~%{$reset_color%} %{$reset_color%}%{$PROMPT_PROMPT%}$ret_status%{$reset_color%}%(#~ # ~) '
-if git_prompt_status > /dev/null 2>&1 ; then
-    PROMPT='%{$nice_blue%}$prompt_hostname:%{$fg[green]%}%~%{$reset_color%} %{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$reset_color%}%{$PROMPT_PROMPT%}$ret_status%{$reset_color%}%(#~ #~) '
-fi
+
+# if git_prompt_status > /dev/null 2>&1 ; then
+#     PROMPT='%{$nice_blue%}$prompt_hostname:%{$fg[green]%}%~%{$reset_color%} %{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$GIT_DIRTY_COLOR%}$(git_prompt_status) %{$reset_color%}%{$PROMPT_PROMPT%}$ret_status%{$reset_color%}%(#~ #~) '
+# fi
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[yellow]%}("
 ZSH_THEME_GIT_PROMPT_SUFFIX=")%{$reset_color%}"
