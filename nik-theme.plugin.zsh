@@ -12,7 +12,7 @@ GIT_DIRTY_COLOR=$FG[133]
 GIT_CLEAN_COLOR=$FG[118]
 GIT_PROMPT_INFO=$FG[012]
 
-ret_status="%(?:%{$PROMPT_SUCCESS_COLOR%}$prompt_thingy:%{$PROMPT_FAILURE_COLOR%}$prompt_thingy%s)"
+ret_status="%(?:%{$PROMPT_SUCCESS_COLOR%}[$prompt_thingy]:%{$PROMPT_FAILURE_COLOR%}[$prompt_thingy]%s)"
 
 reset_color=$FX[reset]
 # RPS1='%{$fg[blue]%}%~%{$reset_color%} '
